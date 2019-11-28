@@ -95,8 +95,8 @@ def fit_dataset(file_name=None, func_name=None, minStat=None):
         param_writer = pIO.channel_param_writer(out_file, sensor_type='sipm', func_name=fnam[func_name], param_names=pIO.generic_params)
 
     #knownDead    = [3056, 11009, 12005, 12048, 14010, 22028, 22029, 25049] #12058 not dead anymore
-    knownDead    = [3056, 11009, 14010, 16016, 22028, 22029, 25049]
-    specialCheck = [1006,  1007,  3000,  3001,  5010,  7000, 22029, 28056, 28057]
+    knownDead    = [3056, 11009, 14010, 16016, 21051, 22028, 22029, 25049]
+    specialCheck = [1006,  1007,  3000,  3001,  5010,  7000, 22029, 25043, 28056, 28057]
         
     for ich, (led, dar) in enumerate(zip(specsL, specsD)):
         if channs[ich] in channs[masked_ch]:
@@ -216,18 +216,18 @@ def fit_dataset(file_name=None, func_name=None, minStat=None):
                       (bounds[1][0], bounds[1][1], bounds[1][2], 2.5)]
             rfit = fitf.fit(respF, bins[b1:b2], led[b1:b2], nseed, sigma=errs[b1:b2], bounds=nbound)
             chi  = rfit.chi2
-        #if not optimise:
-        if channs[ich] == '25043':
-                #if channs[ich] in specialCheck or chi >= 10 or rfit.values[2] < 12 or rfit.values[2] > 19 or rfit.values[3] > 3:
-                #    if channs[ich] in specialCheck: print('Special check channel '+str(channs[ich]))
-                #    print('Channel fit: ', rfit.values, 'Chi: ', chi)
-                plt.errorbar(bins, led, xerr=0.5*np.diff(bins)[0], yerr=errs, fmt='b.')
-                plt.plot(bins[b1:b2], respF(bins[b1:b2], *rfit.values), 'r')
-                plt.plot(bins[b1:b2], respF(bins[b1:b2], *seeds), 'g')
-                plt.title('Spe response fit to channel '+str(channs[ich]))
-                plt.xlabel('ADC')
-                plt.ylabel('AU')
-                plt.show()
+        if not optimise:
+        #if channs[ich] == '25043':
+                if channs[ich] in specialCheck or chi >= 10 or rfit.values[2] < 12 or rfit.values[2] > 19 or rfit.values[3] > 3:
+                    if channs[ich] in specialCheck: print('Special check channel '+str(channs[ich]))
+                    print('Channel fit: ', rfit.values, 'Chi: ', chi)
+                    plt.errorbar(bins, led, xerr=0.5*np.diff(bins)[0], yerr=errs, fmt='b.')
+                    plt.plot(bins[b1:b2], respF(bins[b1:b2], *rfit.values), 'r')
+                    plt.plot(bins[b1:b2], respF(bins[b1:b2], *seeds), 'g')
+                    plt.title('Spe response fit to channel '+str(channs[ich]))
+                    plt.xlabel('ADC')
+                    plt.ylabel('AU')
+                    plt.show()
 
         outData.append([channs[ich], rfit.values, rfit.errors, respF.n_gaussians, chi])
         outDict[pIO.generic_params[0]] = (rfit.values[0], rfit.errors[0])

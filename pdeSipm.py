@@ -16,10 +16,10 @@ def compare_runs(run_no, infiles):
     #run_no  = int(sys.argv[1]) # Only for sensor positions and mapping
     #infiles = sys.argv[2:]
 
-    sensor_x   = DB.DataSiPM(det_db, run_no).X.values
-    sensor_y   = DB.DataSiPM(det_db, run_no).Y.values
+    sensor_x = DB.DataSiPM(det_db, run_no).X.values
+    sensor_y = DB.DataSiPM(det_db, run_no).Y.values
     chi_vals = []
-    mu_vals = []
+    mu_vals  = []
     for ifile in infiles:
         chis, mus = pde(run_no, ifile)
         chi_vals.append(chis)

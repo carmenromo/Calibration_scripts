@@ -34,11 +34,11 @@ for i, file in enumerate(files):
 ## Representing the DIFFERENCE between the values of different runs:
 fig, ax  = plt.subplots(figsize=(8,6))
 r0vals     = np.array(fResults[0])
-months = ['Dec2018', 'Feb2019', 'Apr2019', 'May2019']
+months = ['July', 'Aug', 'Sep', 'Oct']
 month0 = months[0]
 for j, month in zip(range(1, len(fResults)), months[1:]):
     valDiff = np.array(fResults[j]) - r0vals #Substraction of arrays. valDiff is another array
-    ax.hist(valDiff[0], bins=np.linspace(-13, 13, 120), log=True, alpha=0.7, label='R'+str(run_nos[j])+'('+month+') - R'+str(run_nos[0])+'('+month0+')') #histtype='step'
+    ax.hist(valDiff[0], bins=np.linspace(-13, 13, 120), log=True, alpha=0.7, label='R'+str(run_nos[j])+' ('+month+') - R'+str(run_nos[0])+' ('+month0+')') #histtype='step'
 ax.set_title('SiPM gain differences', fontsize=14)
 ax.set_xlabel('diff gain (ADC)', fontsize=12)
 plt.rcParams["font.size"] = 11
@@ -50,7 +50,7 @@ plt.tight_layout()
 fig.show()
 catcher = input('If you want to save the plot press s')
 if 's' in catcher:
-    fig.savefig('/Users/carmenromoluque/Calibration/Collaboration_meeting/june_2019/sipmRunDifferencePlots.png')
+    fig.savefig('/Users/carmenromoluque/Calibration/Collaboration_meeting/november_2019/sipmRunDifferencePlots.png')
 
 
 #### Representing the ABSOLUTE values:
