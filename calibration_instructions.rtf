@@ -288,10 +288,24 @@ The script calculates the mean value overall the runs with different LEDs taking
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b\fs30 \cf0 8) Upload database
+\b\fs30 \cf0 8) Make the pdf file: 
+\b0\fs24 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\b \cf4 	PDFs:
+\b0 \cf0   Script:  
+\b \cf7 pdfs_hdf5_to_csv_py.py
+\b0 \cf0 \
+		
+\b \cf5 python pdfs_hdf5_to_csv_py.py -i pdfSpectra.h5  - -min-run run_no 
+\b0 \cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\b\fs30 \cf0 9) Upload database
 \b0\fs24 \
 	Enter with the user nextwriter (same password as always)\
-	a) ChannelGain \'97> Import \'97>  select file created in step 7) \'97> format CSV \'97> Continue\
+	a) \ul ChannelGain\ulnone  \'97> Import \'97>  select file created in step 7) \'97> format CSV \'97> Continue\
 	b) We have to change the MaxRun for the previous dataset.\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
@@ -299,7 +313,18 @@ The script calculates the mean value overall the runs with different LEDs taking
 \b0 \cf0 Edit \'97> UPDATE `ChannelGain` SET MaxRun=XXXX WHERE MinRun=YYYY AND SensorID<100
 \b \cf7 \
 \cf3 		SiPMs:\cf7   
-\b0 \cf0 Edit \'97> UPDATE `ChannelGain` SET MaxRun=XXXX WHERE MinRun=YYYY AND SensorID>100
+\b0 \cf0 Edit \'97> UPDATE `ChannelGain` SET MaxRun=XXXX WHERE MinRun=YYYY AND SensorID>100\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\b \cf7 	\cf4 PDFs:\
+	
+\b0 \cf12 a) \ul SipmNoisePdf\ulnone  \'97> Import \'97> \cf0 select the \ul compressed\ulnone  file created in step 8) \'97> format CSV \'97> Continue\
+	
+\b IMPORTANT: 
+\b0 a line of zeros is created with the script of step 8). So I have to 
+\b delete
+\b0  it from the DB.\
+	b) Change the maxRun: Edit \'97> UPDATE `SipmNoisePdf ` SET MaxRun=XXXX WHERE MinRun=YYYY AND SensorID>100
 \b \cf7 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
@@ -307,7 +332,7 @@ The script calculates the mean value overall the runs with different LEDs taking
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b\fs30 \cf0 9) Download the database and upload IC
+\b\fs30 \cf0 10) Download the database and upload IC
 \b0\fs24 \
 	a) Create a new branch in IC repository\
 	b) Clonate the database: \
@@ -324,19 +349,19 @@ The script calculates the mean value overall the runs with different LEDs taking
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b\fs30 \cf0 10) Upload DB in Canfranc
+\b\fs30 \cf0 11) Upload DB in Canfranc
 \b0\fs24 \
 When the PR is accepted and merged, the database in Canfranc needs to be uploaded too.\
 Sign with the corresponding user in frontend1next. With the shifter account will not work (my alias is canfranc_cr).\
 	a) Activate the environment variables: 
 \b \cf5 source ic_setup.sh\
 	
-\b0 \cf12 b) 
+\b0 \cf0 b) 
 \b \cf5 cd /software/IC
-\b0 \cf12 \
+\b0 \cf0 \
 	c) Download the new db: 
 \b \cf5 bash manage.sh download_test_db NEWDB 
-\b0 \cf12 \
+\b0 \cf0 \
 	With the previous command DB is only downloaded in frontend1next, so we have to synchronize the 3 machines located in Canfranc:\
 	d) 
 \b \cf5 sudo /scripts/rsyncSoftware.sh
@@ -345,13 +370,13 @@ Sign with the corresponding user in frontend1next. With the shifter account will
 \
 \
 
-\b\fs30 11) Upload monitoring plots
+\b\fs30 12) Upload monitoring plots
 \b0\fs24 \
 /home/shifter/monitoring/calibration\
 \
 \
 
-\b\fs30 12) Send an email to the Collaboration
+\b\fs30 13) Send an email to the Collaboration
 \b0\fs24 \
 next-physics@pegaso.ific.uv.es\CocoaLigature1 \
 	\
