@@ -3,7 +3,7 @@
 }
 {\colortbl;\red255\green255\blue255;\red46\green111\blue253;\red168\green24\blue75;\red254\green112\blue56;
 \red102\green177\blue50;\red230\green87\blue141;\red160\green114\blue253;\red203\green36\blue24;\red193\green101\blue28;
-\red170\green13\blue145;\red28\green0\blue207;\red0\green0\blue0;}
+\red170\green13\blue145;\red28\green0\blue207;\red221\green32\blue103;}
 \paperw11900\paperh16840\margl1440\margr1440\vieww28440\viewh12400\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
@@ -32,15 +32,15 @@ Files:
 
 \b\fs30 \cf0 1) Run taking
 \b0\fs24 \
-Data for both type of sensors are taken. PMTs can be calibrated remotely because the LEDs are in the SiPMs dices and they are controlled with the java program. \
+Data for both type of sensors are taken. PMTs can be calibrated remotely because the LEDs are in the SiPMs dices and they are controlled with the java program.\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b \cf2 	PMTs: 
+\b \cf2 	PMTs:
 \b0 \cf0 \
 	runs with different LEDs are taken.\
 \
 
-\b \cf3 	SiPMs: 
+\b \cf3 	SiPMs:
 \b0 \cf0 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
@@ -103,21 +103,21 @@ In the spectra, what we do is to sum the light pulses of the waveforms. The puls
 Example of the config parameters for the SiPMs:\
 
 \b \cf3 	SiPMs:
-\b0 \cf0  with only one pulse per event is enough. \
+\b0 \cf0  with only one pulse per event is enough.\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f2 \cf8 \CocoaLigature0 	# Histogram bins (ADCs)                                                                                                                                                                           \cf0 \
+\f2 \cf8 \CocoaLigature0 	# Histogram bins (ADCs)\cf0 \
 \cf9 	min_bin\cf0  = -49.5\
 \cf9 	max_bin\cf0  = 300.5\
 \cf9 	bin_width\cf0  = 1.\
-\cf8 	# Integral definitions. Start, width and period in microseconds                                                                                                                   \cf0 \
+\cf8 	# Integral definitions. Start, width and period in microseconds\cf0 \
 \cf9 	number_integrals\cf0  =  1\
 \cf9 	integral_start\cf0    = 40\
 \cf9 	integral_width\cf0    =  3\
 \cf9 	integrals_period\cf0  = 50
 \f0 \CocoaLigature1 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf0 In the case of the pdfs, we sum the whole waveform. \
+\cf0 In the case of the pdfs, we sum the whole waveform.\
 \
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
@@ -127,7 +127,7 @@ Example of the config parameters for the SiPMs:\
 \b\fs30 2)
 \b0\fs24  and 
 \b\fs30 3
-\b0\fs24 ) can be done \'93simultaneously\'94 with the command: \
+\b0\fs24 ) can be done \'93simultaneously\'94 with the command:\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
 \b \cf2 	PMTs:    \cf5 runSensorCal pmt run_no1 run_no2 \'85
@@ -179,7 +179,7 @@ The files that make the fits are:\
 \b0 \cf0 50 is the number of bins\
 
 \b \cf3 	SiPMs:\cf7   sipmCalFit_test.py\
-		       \cf5 python sipmCalFit_test.py spectra.h5 dfunc true 10 \cf7 \
+		       \cf5 python sipmCalFit_test.py spectra.h5 dfunc true 10\cf7 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
 \b0 \cf0 A hdf5 file is obtained. Example: \CocoaLigature0 sipmCalParOut_R7699_Fdfunc.h5
@@ -288,7 +288,7 @@ The script calculates the mean value overall the runs with different LEDs taking
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b\fs30 \cf0 8) Make the pdf file: 
+\b\fs30 \cf0 8) Make the pdf file:
 \b0\fs24 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
@@ -297,7 +297,7 @@ The script calculates the mean value overall the runs with different LEDs taking
 \b \cf7 pdfs_hdf5_to_csv_py.py
 \b0 \cf0 \
 		
-\b \cf5 python pdfs_hdf5_to_csv_py.py -i pdfSpectra.h5  - -min-run run_no 
+\b \cf5 python pdfs_hdf5_to_csv_py.py -i pdfSpectra.h5  - -min-run run_no
 \b0 \cf0 \
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
@@ -318,7 +318,7 @@ The script calculates the mean value overall the runs with different LEDs taking
 
 \b \cf7 	\cf4 PDFs:\
 	
-\b0 \cf12 a) \ul SipmNoisePdf\ulnone  \'97> Import \'97> \cf0 select the \ul compressed\ulnone  file created in step 8) \'97> format CSV \'97> Continue\
+\b0 \cf0 a) \ul SipmNoisePdf\ulnone  \'97> Import \'97> select the \ul compressed\ulnone  file created in step 8) \'97> format CSV \'97> Continue\
 	
 \b IMPORTANT: 
 \b0 a line of zeros is created with the script of step 8). So I have to 
@@ -328,14 +328,14 @@ The script calculates the mean value overall the runs with different LEDs taking
 \b \cf7 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b0 \cf0 		\
+\b0 \cf0 \
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
 \b\fs30 \cf0 10) Download the database and upload IC
 \b0\fs24 \
 	a) Create a new branch in IC repository\
-	b) Clonate the database: \
+	b) Clonate the database:\
 		
 \b \cf5 \CocoaLigature0 source manage.sh work_in_python_version 3.7\
 		source manage.sh download_test_db (NEWDB/DEMOPPDB
@@ -345,28 +345,35 @@ The script calculates the mean value overall the runs with different LEDs taking
 \b0 \cf0 \
 	c) Add a commit with the file localdb.sqlite3\
 	d) Make a PR explaining all the changes in the DB. Add some plots.\
-	\
+\
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b\fs30 \cf0 11) Upload DB in Canfranc
-\b0\fs24 \
+\b\fs30 \cf0 11) Upload DB in Canfranc 
+\fs24 \cf12 (BE SUPER CAREFUL AND ASK PAU WHEN WE CAN UPLOAD CANFRANC!!!!!!!!!!!!!!! BECAUSE THERE CAN BE A RUN PROCESSING IN THIS MOMENT AND IT CAN BE AFFECTED BY THE DB CHANGE!!!!!)
+\b0 \cf0 \
 When the PR is accepted and merged, the database in Canfranc needs to be uploaded too.\
 Sign with the corresponding user in frontend1next. With the shifter account will not work (my alias is canfranc_cr).\
 	a) Activate the environment variables: 
 \b \cf5 source ic_setup.sh\
 	
 \b0 \cf0 b) 
-\b \cf5 cd /software/IC
+\b \cf5 cd /software/IC-v1.2.0 \cf12 (BE SUPER CAREFUL WITH THE IC VERSION!!!!!!)
 \b0 \cf0 \
 	c) Download the new db: 
-\b \cf5 bash manage.sh download_test_db NEWDB 
+\b \cf5 bash manage.sh download_test_db NEWDB
 \b0 \cf0 \
-	With the previous command DB is only downloaded in frontend1next, so we have to synchronize the 3 machines located in Canfranc:\
+	d) Run the tests	 to check that everything has been uploaded correctly: 
+\b \cf5 source manage.sh work_in_python_version 3.7
+\b0 \cf0 \
+	With the command executed in c), DB is only downloaded in frontend1next, so we have to synchronize the 3 machines located in Canfranc:\
 	d) 
 \b \cf5 sudo /scripts/rsyncSoftware.sh
 \b0 \cf0 \
-	e) Check that the values uploaded in Canfranc are correct. (example: python; from invisible_cities.database import load_db as DB; DB.DataSiPM(\'91new\'92, run_no))\
+	e) Check that the values uploaded in Canfranc are correct. 
+\b IMPORTANT!!!!! \cf12 IMPORTANT!!!!!!!
+\b0 \cf0 \
+		(example: python; from invisible_cities.database import load_db as DB; DB.DataSiPM(\'91new\'92, run_no))\
 \
 \
 
@@ -379,7 +386,7 @@ Sign with the corresponding user in frontend1next. With the shifter account will
 \b\fs30 13) Send an email to the Collaboration
 \b0\fs24 \
 next-physics@pegaso.ific.uv.es\CocoaLigature1 \
-	\
+\
 \
 \
 \
@@ -407,7 +414,7 @@ next-physics@pegaso.ific.uv.es\CocoaLigature1 \
 	
 \b \cf5 python sipmConnectionTest.py -e elec_spec -d dark_spec run_no
 \b0 \cf0 \
-		\
+\
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
