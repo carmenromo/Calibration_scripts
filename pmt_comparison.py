@@ -57,6 +57,7 @@ axistitles = ['Pedestal sigma vs. channel number'       ,
               'Legend'                                  ]
 all_channel_nos = np.arange(12)
 fig, axes = plt.subplots(nrows=3, ncols=2, figsize=(20,6))
+
 for j, (vals1, run) in enumerate(zip(fResults, run_nos)):
     #print(vals1)
     channs = all_channel_nos
@@ -67,8 +68,8 @@ for j, (vals1, run) in enumerate(zip(fResults, run_nos)):
             ax.set_title(axtit) # Vale, esto para cada k
             ax.set_xlabel('Channel number')
         if k < 4:
-            if k == 1:
-                ## We want to normalise to the maximum value here.
+            if k == 1: ## The poisson mu depends on the light of the LED, so
+                ## we want to normalise to the maximum value here.
                 maxV = vals[k][ ::2].max()
                 maxE = vals[k][1::2].max()
                 vp   = vals[k][ ::2]/maxV
