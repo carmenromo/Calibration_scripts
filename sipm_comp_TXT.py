@@ -54,7 +54,6 @@ mu_err_mean    = np.linalg.norm(np.array([j for j in    mu_err_list]), axis=0)
 chi2_mean      = np.mean       (np.array([j for j in      chi2_list]), axis=0)
 
 
-#param_names = ['MinRun', 'MaxRun', 'SensorID', 'Centroid', 'ErrorCentroid', 'Sigma', 'ErrorSigma']
 with open('sipm_comp_values_R'+str(mean_run)+'.txt', 'w') as out_file:
     for n,sens in enumerate(sensor_number):
         out_file.write(str(mean_run)+',100000,'+str(sens)             +','
