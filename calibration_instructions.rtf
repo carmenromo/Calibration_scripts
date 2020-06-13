@@ -1,9 +1,14 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Light;\f2\fnil\fcharset0 Menlo-Regular;
-}
+{\rtf1\ansi\ansicpg1252\cocoartf2512
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Light;\f2\fswiss\fcharset0 Helvetica-Bold;
+\f3\fnil\fcharset0 Menlo-Regular;}
 {\colortbl;\red255\green255\blue255;\red46\green111\blue253;\red168\green24\blue75;\red254\green112\blue56;
 \red102\green177\blue50;\red230\green87\blue141;\red160\green114\blue253;\red203\green36\blue24;\red193\green101\blue28;
-\red170\green13\blue145;\red28\green0\blue207;\red221\green32\blue103;}
+\red170\green13\blue145;\red28\green0\blue207;\red221\green32\blue103;\red0\green0\blue0;\red255\green255\blue255;
+\red221\green32\blue103;}
+{\*\expandedcolortbl;;\csgenericrgb\c18039\c43529\c99216;\csgenericrgb\c65882\c9412\c29412;\csgenericrgb\c99608\c43922\c21961;
+\csgenericrgb\c40000\c69412\c19608;\csgenericrgb\c90196\c34118\c55294;\csgenericrgb\c62745\c44706\c99216;\csgenericrgb\c79608\c14118\c9412;\csgenericrgb\c75686\c39608\c10980;
+\csgenericrgb\c66667\c5098\c56863;\csgenericrgb\c10980\c0\c81176;\csgenericrgb\c86667\c12549\c40392;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;
+\cssrgb\c90234\c23206\c47866;}
 \paperw11900\paperh16840\margl1440\margr1440\vieww28440\viewh12400\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
@@ -15,98 +20,98 @@
 \
 Notation:\
 PMT case first (
-\b \cf2 PMTs, \cf3 SiPMs, \cf4 PDFs
-\b0 \cf0 )\
+\f2\b \cf2 PMTs, \cf3 SiPMs, \cf4 PDFs
+\f0\b0 \cf0 )\
 Commands: 
-\b \cf5 green\
+\f2\b \cf5 green\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b0 \cf0 Paths: 
-\b \cf6 pink
-\b0 \cf0 \
+\f0\b0 \cf0 Paths: 
+\f2\b \cf6 pink
+\f0\b0 \cf0 \
 Files: 
-\b \cf7 lilac
-\b0 \cf0 \
+\f2\b \cf7 lilac
+\f0\b0 \cf0 \
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b\fs30 \cf0 1) Run taking
-\b0\fs24 \
+\f2\b\fs30 \cf0 1) Run taking
+\f0\b0\fs24 \
 Data for both type of sensors are taken. PMTs can be calibrated remotely because the LEDs are in the SiPMs dices and they are controlled with the java program.\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b \cf2 	PMTs:
-\b0 \cf0 \
+\f2\b \cf2 	PMTs:
+\f0\b0 \cf0 \
 	runs with different LEDs are taken.\
 \
 
-\b \cf3 	SiPMs:
-\b0 \cf0 \
+\f2\b \cf3 	SiPMs:
+\f0\b0 \cf0 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b \cf0 	electronics:
-\b0  run with SiPMs OFF and without LEDs.\
+\f2\b \cf0 	electronics:
+\f0\b0  run with SiPMs OFF and without LEDs.\
 
-\b 	dark current:
-\b0  run with SiPMs ON and without LEDs.\
+\f2\b 	dark current:
+\f0\b0  run with SiPMs ON and without LEDs.\
 
-\b 	light:
-\b0  runs with SiPMs ON and with LEDs. There is a LED in every PMT that has to be manually turned ON/OFF. The level of light in controlled with the pulse generator.\
+\f2\b 	light:
+\f0\b0  runs with SiPMs ON and with LEDs. There is a LED in every PMT that has to be manually turned ON/OFF. The level of light in controlled with the pulse generator.\
 \
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b\fs30 \cf0 2) Data decoder\
+\f2\b\fs30 \cf0 2) Data decoder\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b0\fs24 \cf0 The machines where we work are in Canfranc: 
-\b \cf5 \expnd0\expndtw0\kerning0
+\f0\b0\fs24 \cf0 The machines where we work are in Canfranc: 
+\f2\b \cf5 \expnd0\expndtw0\kerning0
 ssh shifter@195.77.159.50 -p 6030
-\b0 \cf0 \kerning1\expnd0\expndtw0 \
+\f0\b0 \cf0 \kerning1\expnd0\expndtw0 \
 VNC: open a new terminal: 
-\b \cf5 shifter@frontend1next
-\b0 \cf0 \
+\f2\b \cf5 shifter@frontend1next
+\f0\b0 \cf0 \
 Data are taken in binary format, so when the run finishes, we have to transform binary files into hdf5 format with the command:\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b \cf5 runDecoDaemon (-t) run_no  
-\b0 \cf0 -t means test\
+\f2\b \cf5 runDecoDaemon (-t) run_no  
+\f0\b0 \cf0 -t means test\
 hdf5 data are stored in: 
-\b \cf6 /analysis/run_no/hdf5/
-\b0 \cf0 . Waveforms are in
-\b \cf6  data/
-\b0 \cf0 .\
+\f2\b \cf6 /analysis/run_no/hdf5/
+\f0\b0 \cf0 . Waveforms are in
+\f2\b \cf6  data/
+\f0\b0 \cf0 .\
 \
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b\fs30 \cf0 3) Make spectra
-\b0\fs24 \
+\f2\b\fs30 \cf0 3) Make spectra
+\f0\b0\fs24 \
 When the decoder is finished, jobs for spectra have to be launched.\
 The cities need a config file with the corresponding parameters. Every run has its own config, log and sh file.\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b \cf2 	PMTs:   
-\b0 \cf0 Command: 
-\b \cf5 qsub -N job_name -v city=pmtgain,config=conf_name,log=log_name generic_job.sh\
+\f2\b \cf2 	PMTs:   
+\f0\b0 \cf0 Command: 
+\f2\b \cf5 qsub -N job_name -v city=pmtgain,config=conf_name,log=log_name generic_job.sh\
 \cf3 	SiPMs:
-\b0 \cf0   Command: 
-\b \cf5 qsub -N job_name -v city=sipmgain,config=conf_name,log=log_name generic_job.sh
-\b0 \cf0 \
+\f0\b0 \cf0   Command: 
+\f2\b \cf5 qsub -N job_name -v city=sipmgain,config=conf_name,log=log_name generic_job.sh
+\f0\b0 \cf0 \
 
-\b \cf4 	PDFs:
-\b0 \cf0    Command: 
-\b \cf5 qsub -N job_name -v city=sipmpdf,config=conf_name,log=log_name generic_job.sh
-\b0 \cf0 \
+\f2\b \cf4 	PDFs:
+\f0\b0 \cf0    Command: 
+\f2\b \cf5 qsub -N job_name -v city=sipmpdf,config=conf_name,log=log_name generic_job.sh
+\f0\b0 \cf0 \
 \
 In the spectra, what we do is to sum the light pulses of the waveforms. The pulse in our case is always in the same position (in the example is ~40 ms). So we sum this peak overall the events for every sensor.\
 Example of the config parameters for the SiPMs:\
 
-\b \cf3 	SiPMs:
-\b0 \cf0  with only one pulse per event is enough.\
+\f2\b \cf3 	SiPMs:
+\f0\b0 \cf0  with only one pulse per event is enough.\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-\f2 \cf8 \CocoaLigature0 	# Histogram bins (ADCs)\cf0 \
+\f3 \cf8 \CocoaLigature0 	# Histogram bins (ADCs)\cf0 \
 \cf9 	min_bin\cf0  = -49.5\
 \cf9 	max_bin\cf0  = 300.5\
 \cf9 	bin_width\cf0  = 1.\
@@ -124,81 +129,81 @@ Example of the config parameters for the SiPMs:\
 
 \fs32 \cf0 **
 \fs24  The steps 
-\b\fs30 2)
-\b0\fs24  and 
-\b\fs30 3
-\b0\fs24 ) can be done \'93simultaneously\'94 with the command:\
+\f2\b\fs30 2)
+\f0\b0\fs24  and 
+\f2\b\fs30 3
+\f0\b0\fs24 ) can be done \'93simultaneously\'94 with the command:\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b \cf2 	PMTs:    \cf5 runSensorCal pmt run_no1 run_no2 \'85
-\b0 \cf0 \
+\f2\b \cf2 	PMTs:    \cf5 runSensorCal pmt run_no1 run_no2 \'85
+\f0\b0 \cf0 \
 
-\b \cf3 	SiPMs:
-\b0 \cf0 	
-\b \cf5 runSensorCal sipm run_no1 run_no2 \'85
-\b0 \cf0 \
+\f2\b \cf3 	SiPMs:
+\f0\b0 \cf0 	
+\f2\b \cf5 runSensorCal sipm run_no1 run_no2 \'85
+\f0\b0 \cf0 \
 
-\b \cf4 	PDFs:
-\b0 \cf0     
-\b \cf5 runSensorCal pdf run_no1 run_no2 \'85
-\b0 \cf0 \
+\f2\b \cf4 	PDFs:
+\f0\b0 \cf0     
+\f2\b \cf5 runSensorCal pdf run_no1 run_no2 \'85
+\f0\b0 \cf0 \
 In this case, the spectra are saved in:\
 	
-\b \cf2 PMTs:    \cf6 \CocoaLigature0 /calibration/pmtCal
-\f2\b0 \cf0 \
+\f2\b \cf2 PMTs:    \cf6 \CocoaLigature0 /calibration/pmtCal
+\f3\b0 \cf0 \
 
-\f0\b \cf3 \CocoaLigature1 	SiPMs:
-\b0 \cf0 	
-\b \cf6 \CocoaLigature0 /calibration/sipmCal
-\f2\b0 \cf0 \
+\f2\b \cf3 \CocoaLigature1 	SiPMs:
+\f0\b0 \cf0 	
+\f2\b \cf6 \CocoaLigature0 /calibration/sipmCal
+\f3\b0 \cf0 \
 
-\f0\b \cf4 \CocoaLigature1 	PDFs:
-\b0 \cf0     
-\b \cf6 \CocoaLigature0 /calibration/pdfCal\cf5 \
+\f2\b \cf4 \CocoaLigature1 	PDFs:
+\f0\b0 \cf0     
+\f2\b \cf6 \CocoaLigature0 /calibration/pdfCal\cf5 \
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b0 \cf0 \CocoaLigature1 \
+\f0\b0 \cf0 \CocoaLigature1 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b\fs30 \cf0 4) Fit spectra
-\b0\fs24 \
+\f2\b\fs30 \cf0 4) Fit spectra
+\f0\b0\fs24 \
 From the fits of the spectra we obtain the important parameters of the sensors: the gain, the mu value, the sigma, the noise\'85\
 The files that make the fits are:\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b \cf2 	PMTs:   \cf7 pmtCalFit.py (it was long time called pmtCalFit_test.py)\
+\f2\b \cf2 	PMTs:   \cf7 pmtCalFit.py (it was long time called pmtCalFit_test.py)\
 		      \cf5 python pmtCalFit.py spectra.h5 dfunc true 50\cf7 \
 				
-\b0 \cf0 dfunc is the function we use for fitting
-\b \cf7 \
+\f0\b0 \cf0 dfunc is the function we use for fitting
+\f2\b \cf7 \
 				
-\b0 \cf0 true means that we take the seeds from the gain values of the DB. If false, peaks are obtained from the curve.
-\b \cf7 \
+\f0\b0 \cf0 true means that we take the seeds from the gain values of the DB. If false, peaks are obtained from the curve.
+\f2\b \cf7 \
 				
-\b0 \cf0 50 is the number of bins\
+\f0\b0 \cf0 50 is the number of bins\
 
-\b \cf3 	SiPMs:\cf7   sipmCalFit.py\
+\f2\b \cf3 	SiPMs:\cf7   sipmCalFit.py\
 		       \cf5 python sipmCalFit.py spectra.h5 dfunc true 10\cf7 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b0 \cf0 A hdf5 file is obtained. Example: \CocoaLigature0 sipmCalParOut_R7699_Fdfunc.h5
-\b \cf7 \CocoaLigature1 \
+\f0\b0 \cf0 A hdf5 file is obtained. Example: \CocoaLigature0 sipmCalParOut_R7699_Fdfunc.h5
+\f2\b \cf7 \CocoaLigature1 \
 
-\b0 \cf0 \
+\f0\b0 \cf0 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b \cf0 IMPORTANT
-\b0 :  Sometimes we need to change the gains of the sensors, so to make the fits, we cannot use the database gains for the seeds of the fits, so we have to take the peaks from the spectrum by using: 
-\b use_db_gain_seeds = False
-\b0 !!!!! Sometimes we will have to change also the parameters in the function 
-\b sensor_values
-\b0  of IC!!!\
+\f2\b \cf0 IMPORTANT
+\f0\b0 :  Sometimes we need to change the gains of the sensors, so to make the fits, we cannot use the database gains for the seeds of the fits, so we have to take the peaks from the spectrum by using: 
+\f2\b use_db_gain_seeds = False
+\f0\b0 !!!!! Sometimes we will have to change also the parameters in the function 
+\f2\b sensor_values
+\f0\b0  of IC!!!\
 		
-\b SiPM voltage <= 27V:
-\b0 \
+\f2\b SiPM voltage <= 27V:
+\f0\b0 \
 		
-\f2\fs22 \cf10 \CocoaLigature0 if\cf0  sensor_type \cf10 is\cf0  SensorType.SIPM:\
+\f3\fs22 \cf10 \CocoaLigature0 if\cf0  sensor_type \cf10 is\cf0  SensorType.SIPM:\
 \pard\tx642\pardeftab642\pardirnatural\partightenfactor0
 \cf0         		spectra         = spectrum\
         		peak_range      = np.arange(\cf11 4\cf0 , \cf11 20\cf0 )\
@@ -208,11 +213,11 @@ The files that make the fits are:\
         		p1pe_seed       = \cf11 2\cf0 \
         		lim_ped         = \cf11 10000\
 	    
-\f0\b\fs24 \cf0 \CocoaLigature1 SiPM voltage > 27V:
-\b0 \
+\f2\b\fs24 \cf0 \CocoaLigature1 SiPM voltage > 27V:
+\f0\b0 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 \cf0 		
-\f2\fs22 \cf10 \CocoaLigature0 if\cf0  sensor_type \cf10 is\cf0  SensorType.SIPM:\
+\f3\fs22 \cf10 \CocoaLigature0 if\cf0  sensor_type \cf10 is\cf0  SensorType.SIPM:\
 \pard\tx642\pardeftab642\pardirnatural\partightenfactor0
 \cf0         		spectra         = spectrum\
         		peak_range      = np.arange(\cf11 4\cf0 , \cf11 20\cf0 )\
@@ -228,163 +233,173 @@ The files that make the fits are:\
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b\fs30 \cf0 5) Extract fit values\
+\f2\b\fs30 \cf0 5) Extract fit values\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b0\fs24 \cf0 A TXT file is created with the important parameters extracted from the fits for every sensor.\
+\f0\b0\fs24 \cf0 A TXT file is created with the important parameters extracted from the fits for every sensor.\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b \cf2 	PMTs:   \cf7 pmtGainTXT.py\
+\f2\b \cf2 	PMTs:   \cf7 pmtGainTXT.py\
 		     \cf5 python pmtGainTXT.py \CocoaLigature0 pmtCalParOut_R7699_Fdfunc.h5
-\b0 \cf0 \CocoaLigature1 \
+\f0\b0 \cf0 \CocoaLigature1 \
 
-\b \cf3 	SiPMs:\cf7   sipmGainTXT.py\
+\f2\b \cf3 	SiPMs:\cf7   sipmGainTXT.py\
 		     \cf5 python sipmGainTXT.py \CocoaLigature0 sipmCalParOut_R7699_Fdfunc.h5
-\b0 \cf0 \CocoaLigature1 \
+\f0\b0 \cf0 \CocoaLigature1 \
 \
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b\fs30 \cf0 6) Compare values from different runs
-\b0\fs24 \
+\f2\b\fs30 \cf0 6) Compare values from different runs
+\f0\b0\fs24 \
 The script plots the comparison between the runs with different LEDs taking the txt file created in step 
-\b 5).
-\b0 \
+\f2\b 5).
+\f0\b0 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b \cf2 	PMTs:   \cf7 pmt_comparison.py 
-\b0 \cf0 It plots the absolute gain value for each run
-\b \cf7 \
+\f2\b \cf2 	PMTs:   \cf7 pmt_comparison.py 
+\f0\b0 \cf0 It plots the absolute gain value for each run
+\f2\b \cf7 \
 		     \cf5 python pmt_comparison.py\CocoaLigature0  file0 file1 file2 \'85
-\b0 \cf0 \CocoaLigature1 \
+\f0\b0 \cf0 \CocoaLigature1 \
 
-\b \cf3 	SiPMs:\cf7   sipm_comparison.py 
-\b0 \cf0 It plots a histogram with the difference of the values of each run with respect to the first one (file0).
-\b \cf7 \
+\f2\b \cf3 	SiPMs:\cf7   sipm_comparison.py 
+\f0\b0 \cf0 It plots a histogram with the difference of the values of each run with respect to the first one (file0).
+\f2\b \cf7 \
 		     \cf5 python pmt_comparison.py\CocoaLigature0  file0 file1 file2 \'85\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b0 \cf0 \CocoaLigature1 \
+\f0\b0 \cf0 \CocoaLigature1 \
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b\fs30 \cf0 7) Select values to upload database
-\b0\fs24 \
+\f2\b\fs30 \cf0 7) Select values to upload database
+\f0\b0\fs24 \
 The script calculates the mean value overall the runs with different LEDs taking the txt file created in step 
-\b 5)
-\b0 .\
+\f2\b 5)
+\f0\b0 .\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b \cf2 	PMTs:   \cf7 pmtDatabaseTXT.py\
+\f2\b \cf2 	PMTs:   \cf7 pmtDatabaseTXT.py\
 		     \cf5 python pmtDatabaseTXT.py \CocoaLigature0 min_run file0 file1 file2 \'85
-\b0 \cf0 \CocoaLigature1 \
+\f0\b0 \cf0 \CocoaLigature1 \
 
-\b \cf3 	SiPMs:\cf7   sipmDatabaseTXT.py\
+\f2\b \cf3 	SiPMs:\cf7   sipmDatabaseTXT.py\
 		     \cf5 python sipmDatabaseTXT.py \CocoaLigature0 min_run file0 file1 file2 \'85\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b0 \cf0 \CocoaLigature1 A txt file is created.\
+\f0\b0 \cf0 \CocoaLigature1 A txt file is created.\
 \
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b\fs30 \cf0 8) Make the pdf file:
-\b0\fs24 \
+\f2\b\fs30 \cf0 8) Make the pdf file:
+\f0\b0\fs24 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b \cf4 	PDFs:
-\b0 \cf0   Script:  
-\b \cf7 pdfs_hdf5_to_csv_py.py
-\b0 \cf0 \
+\f2\b \cf4 	PDFs:
+\f0\b0 \cf0   Script:  
+\f2\b \cf7 pdfs_hdf5_to_csv_py.py
+\f0\b0 \cf0 \
 		
-\b \cf5 python pdfs_hdf5_to_csv_py.py -i pdfSpectra.h5  - -min-run run_no
-\b0 \cf0 \
+\f2\b \cf5 python pdfs_hdf5_to_csv_py.py -i pdfSpectra.h5  - -min-run run_no
+\f0\b0 \cf0 \
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b\fs30 \cf0 9) Upload database
-\b0\fs24 \
+\f2\b\fs30 \cf0 9) Upload database
+\f0\b0\fs24 \
 	Enter with the user nextwriter (same password as always)\
 	a) \ul ChannelGain\ulnone  \'97> Import \'97>  select file created in step 7) \'97> format CSV \'97> Continue\
 	b) We have to change the MaxRun for the previous dataset.\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b \cf2 		PMTs:   
-\b0 \cf0 Edit \'97> UPDATE `ChannelGain` SET MaxRun=XXXX WHERE MinRun=YYYY AND SensorID<100
-\b \cf7 \
+\f2\b \cf2 		PMTs:   
+\f0\b0 \cf0 Edit \'97> UPDATE `ChannelGain` SET MaxRun=XXXX WHERE MinRun=YYYY AND SensorID<100
+\f2\b \cf7 \
 \cf3 		SiPMs:\cf7   
-\b0 \cf0 Edit \'97> UPDATE `ChannelGain` SET MaxRun=XXXX WHERE MinRun=YYYY AND SensorID>100\
+\f0\b0 \cf0 Edit \'97> UPDATE `ChannelGain` SET MaxRun=XXXX WHERE MinRun=YYYY AND SensorID>100\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b \cf7 	\cf4 PDFs:\
+\f2\b \cf7 	\cf4 PDFs:\
 	
-\b0 \cf0 a) \ul SipmNoisePdf\ulnone  \'97> Import \'97> select the \ul compressed\ulnone  file created in step 8) \'97> format CSV \'97> Continue\
+\f0\b0 \cf0 a) \ul SipmNoisePdf\ulnone  \'97> Import \'97> select the \ul compressed\ulnone  file created in step 8) \'97> format CSV \'97> Continue\
 	
-\b IMPORTANT: 
-\b0 a line of zeros is created with the script of step 8). So I have to 
-\b delete
-\b0  it from the DB.\
+\f2\b IMPORTANT: 
+\f0\b0 a line of zeros is created with the script of step 8). So I have to 
+\f2\b delete
+\f0\b0  it from the DB.\
 	b) Change the maxRun: Edit \'97> UPDATE `SipmNoisePdf ` SET MaxRun=XXXX WHERE MinRun=YYYY AND SensorID>100
-\b \cf7 \
+\f2\b \cf7 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b0 \cf0 \
+\f0\b0 \cf0 \
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b\fs30 \cf0 10) Download the database and upload IC
-\b0\fs24 \
+\f2\b\fs30 \cf0 10) Download the database and upload IC
+\f0\b0\fs24 \
 	a) Create a new branch in IC repository\
 	b) Clonate the database:\
 		
-\b \cf5 \CocoaLigature0 source manage.sh work_in_python_version 3.7\
+\f2\b \cf5 \CocoaLigature0 source manage.sh work_in_python_version 3.7\
 		source manage.sh download_test_db (NEWDB/DEMOPPDB
-\b0 \cf0  if we don\'92t add anything, it uploads all databases but takes long time)\
+\f0\b0 \cf0  if we don\'92t add anything, it uploads all databases but takes long time)\
 	c) Check that all tests pass: 
-\b \cf5 source manage.sh work_in_python_version 3.7
-\b0 \cf0 \
+\f2\b \cf5 source manage.sh work_in_python_version 3.7
+\f0\b0 \cf0 \
 	c) Add a commit with the file localdb.sqlite3\
 	d) Make a PR explaining all the changes in the DB. Add some plots.\
 \
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b\fs30 \cf0 11) Upload DB in Canfranc 
+\f2\b\fs30 \cf0 11) Upload DB in Canfranc 
 \fs24 \cf12 (BE SUPER CAREFUL AND ASK PAU WHEN WE CAN UPLOAD CANFRANC!!!!!!!!!!!!!!! BECAUSE THERE CAN BE A RUN PROCESSING IN THIS MOMENT AND IT CAN BE AFFECTED BY THE DB CHANGE!!!!!)
-\b0 \cf0 \
+\f0\b0 \cf0 \
 When the PR is accepted and merged, the database in Canfranc needs to be uploaded too.\
 Sign with the corresponding user in frontend1next. With the shifter account will not work (my alias is canfranc_cr).\
 	a) Activate the environment variables: 
-\b \cf5 source ic_setup.sh\
+\f2\b \cf5 source ic_setup.sh\
 	
-\b0 \cf0 b) 
-\b \cf5 cd /software/IC-v1.2.0 \cf12 (BE SUPER CAREFUL WITH THE IC VERSION!!!!!!)
-\b0 \cf0 \
+\f0\b0 \cf0 b) 
+\f2\b \cf5 cd /software/IC-v1.2.0 \cf12 (BE SUPER CAREFUL WITH THE IC VERSION!!!!!!)
+\f0\b0 \cf0 \
 	c) Download the new db: 
-\b \cf5 bash manage.sh download_test_db NEWDB
-\b0 \cf0 \
+\f2\b \cf5 bash manage.sh download_test_db NEWDB\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0 \cf13 \cb14 	
+\f2\b\fs28 \cf15 In case this process is killed
+\f0\b0\fs24 \cf13 , copy the database 
+\f2\b\fs28 localdb.NEWDB.sqlite3
+\f0\b0  from my local and run the tests. Some hypothesis.errors.FailedHealthCheck: errors\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \cb1 \
 	d) Run the tests	 to check that everything has been uploaded correctly: 
-\b \cf5 source manage.sh work_in_python_version 3.7
-\b0 \cf0 \
+\f2\b \cf5 source manage.sh work_in_python_version 3.7
+\f0\b0 \cf0 \
 	With the command executed in c), DB is only downloaded in frontend1next, so we have to synchronize the 3 machines located in Canfranc:\
 	d) 
-\b \cf5 sudo /scripts/rsyncSoftware.sh
-\b0 \cf0 \
+\f2\b \cf5 sudo /scripts/rsyncSoftware.sh
+\f0\b0 \cf0 \
 	e) Check that the values uploaded in Canfranc are correct. 
-\b IMPORTANT!!!!! \cf12 IMPORTANT!!!!!!!
-\b0 \cf0 \
+\f2\b IMPORTANT!!!!! \cf12 IMPORTANT!!!!!!!
+\f0\b0 \cf0 \
 		(example: python; from invisible_cities.database import load_db as DB; DB.DataSiPM(\'91new\'92, run_no))\
 \
 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b\fs30 12) Upload monitoring plots
-\b0\fs24 \
+\f2\b\fs30 \cf0 12) Upload monitoring plots
+\f0\b0\fs24 \
 /home/shifter/monitoring/calibration\
 \
 \
 
-\b\fs30 13) Send an email to the Collaboration
-\b0\fs24 \
+\f2\b\fs30 13) Send an email to the Collaboration
+\f0\b0\fs24 \
 next-physics@pegaso.ific.uv.es\CocoaLigature1 \
 \
 \
@@ -392,28 +407,28 @@ next-physics@pegaso.ific.uv.es\CocoaLigature1 \
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b\fs30 \cf0 Check SiPMs are alive:
-\b0\fs24 \
+\f2\b\fs30 \cf0 Check SiPMs are alive:
+\f0\b0\fs24 \
 	Needed files: 
-\b \cf7 sipmConnectionTest.py
-\b0 \
+\f2\b \cf7 sipmConnectionTest.py
+\f0\b0 \
 				
-\b calutils.py
-\b0 \cf0 \
+\f2\b calutils.py
+\f0\b0 \cf0 \
 	There are two possibilities:\
 	1) Using the 
-\b waveforms
-\b0  of the runs:\
+\f2\b waveforms
+\f0\b0  of the runs:\
 	
-\b \cf5 python sipmConnectionTest.py -w wf_file0 wf_file1 wf_file2 \'85 run_no\
+\f2\b \cf5 python sipmConnectionTest.py -w wf_file0 wf_file1 wf_file2 \'85 run_no\
 	
-\b0 \cf0 In the run_no better to add the lowest run number because it is for the name of the txt file that is created\
+\f0\b0 \cf0 In the run_no better to add the lowest run number because it is for the name of the txt file that is created\
 	2) Using the electronics and dark current 
-\b spectra
-\b0 . (The dark current spectrum has been created with the standard way, not pdf!)\
+\f2\b spectra
+\f0\b0 . (The dark current spectrum has been created with the standard way, not pdf!)\
 	
-\b \cf5 python sipmConnectionTest.py -e elec_spec -d dark_spec run_no
-\b0 \cf0 \
+\f2\b \cf5 python sipmConnectionTest.py -e elec_spec -d dark_spec run_no
+\f0\b0 \cf0 \
 \
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
@@ -424,23 +439,23 @@ next-physics@pegaso.ific.uv.es\CocoaLigature1 \
 \f0\fs24 \cf0 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b \cf0 SensorID:
-\b0  assigned number to have the same values in MC and data.\
+\f2\b \cf0 SensorID:
+\f0\b0  assigned number to have the same values in MC and data.\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b \cf2 	PMTs:
-\b0 \cf0  0, 1, 2, \'85, 11\
+\f2\b \cf2 	PMTs:
+\f0\b0 \cf0  0, 1, 2, \'85, 11\
 
-\b \cf3 	SiPMs: 
-\b0 \cf0 1000, 10001, 10002, \'85,  28063\
+\f2\b \cf3 	SiPMs: 
+\f0\b0 \cf0 1000, 10001, 10002, \'85,  28063\
 	28063: 28 is the dice number and 63 is the sensor number\
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\b \cf0 ChannelID:
-\b0  number of the sensors in order.\
+\f2\b \cf0 ChannelID:
+\f0\b0  number of the sensors in order.\
 	28063 would be the 1791\
 
-\b ElecID:
-\b0  number that comes from the electronics.\
+\f2\b ElecID:
+\f0\b0  number that comes from the electronics.\
 \
 }
