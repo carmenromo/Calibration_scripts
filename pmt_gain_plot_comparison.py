@@ -36,7 +36,7 @@ for i, file in enumerate(files):
 ### Representing the DIFFERENCE between the values of different runs:
 fig, ax = plt.subplots()
 all_channel_nos = np.arange(12)
-months = ['July', 'Aug', 'Sept', 'Oct']
+months = ['Dec', 'Jan', 'Feb', 'Apr', 'Jun']
 for j, (vals1, run, month) in enumerate(zip(fResults, run_nos, months)):
     channs = all_channel_nos
     vals   = vals1
@@ -51,4 +51,4 @@ fig.show()
 plt.show()
 catcher = input('If you want to save the plot press s')
 if 's' in catcher:
-    fig.savefig('/Users/carmenromoluque/Calibration/Collaboration_meeting/november_2019/gain_comp.png')
+    fig.savefig('/Users/carmenromoluque/Calibration/Collaboration_meeting/july_2020/gain_comp.png')
