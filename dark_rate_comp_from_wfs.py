@@ -23,7 +23,7 @@ max_sample = ns.max_sample
 
 run_no    = int(in_files[0][in_files[0].find('run_')+4:in_files[0].find('run_')+8])
 num_wf    = int(in_files[0][in_files[0].find('run_')+9:in_files[0].find('run_')+13])
-out_file  = f'{out_path}/dark_rate_comp_q_values_R{run_no}'
+out_file  = f'{out_path}/dark_rate_comp_q_values_R{run_no}_{num_wf}'
 conv_gain = load_db.DataSiPM(detector, run_no).adc_to_pes.values[:, np.newaxis]
 conv_gain[conv_gain == 0] = 17
 conv_gain = conv_gain.reshape(1792)
