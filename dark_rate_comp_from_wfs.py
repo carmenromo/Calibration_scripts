@@ -31,11 +31,9 @@ conv_gain = conv_gain.reshape(1792)
 dark_qs_all = []
 for file in in_files:
     dark_rwf = tb.open_file(file)
-    h5rwf = dark_rwf.root.RD.sipmrwf
-    n_events, n_sipm, n_bins = h5rwf.shape
-    for evt in range(n_events):
-        cwf = tuple(map(subtract_mode, h5rwf[evt:evt+1,:,min_sample:max_sample]))
-        charges_cd = cwf[0].sum(1)
+    for evt_sipm in dark_rwf.root.RD.sipmrwf:
+        cwf = subtract_mode(evt_sipm[:,min_sample:max_sample])
+        charges_cd = cwf.sum(1)
         dark_qs_all.append(charges_cd/conv_gain)
 tqs = np.array(dark_qs_all).T
 
