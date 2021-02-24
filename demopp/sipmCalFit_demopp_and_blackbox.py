@@ -62,7 +62,8 @@ parser.add_argument('black_box',         type=str2bool, help='In case the spectr
 args = parser.parse_args()
 
 
-db_file = '/Users/carmenromoluque/IC/invisible_cities/database/localdb.DEMOPPDB.sqlite3'
+#db_file = '/Users/carmenromoluque/IC/invisible_cities/database/localdb.DEMOPPDB.sqlite3'
+db_file = 'demopp'
 
 file_name         = args.file_in
 func_name         = args.func_name
