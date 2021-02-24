@@ -40,12 +40,10 @@ parser.add_argument('file_in',           type=str,      help='input spectra',   
 parser.add_argument('func_name',         type=str,      help='function that will be used to fit',  default='dfunc')
 parser.add_argument('use_db_gain_seeds', type=str2bool, help='option to take gain values from db', default=False)
 parser.add_argument('min_stat',          type=int,      help='min statistics for the peaks',       default=10)
-#parser.add_argument('--func-name', type=lambda fun: gettatr(ffuncs, fun), help='function that will be used to fit',  required=False, default='dfunc')
-#parser.add_argument('use_db_gain_seeds', type=bool, help='option to take gain values from db', default=False)
-#parser.add_argument("--use-db-gain-seeds", action="store_true", help="option to take gain values from db") ## For true we have to put explicitly python [program] [args] --use-db-gain-seeds. If we do not write --use-db-gain-seeds it will be False by default.
 args = parser.parse_args()
 
-db_file = '/Users/carmenromoluque/IC/invisible_cities/database/localdb.NEWDB.sqlite3'
+#db_file = '/Users/carmenromoluque/IC/invisible_cities/database/localdb.NEWDB.sqlite3'
+db_file = 'new'
 
 file_name         = args.file_in
 func_name         = args.func_name
@@ -53,8 +51,6 @@ use_db_gain_seeds = args.use_db_gain_seeds
 min_stat          = args.min_stat
 
 sipmIn    = tb.open_file(file_name, 'r')
-#run_no    = file_name[file_name.find('R')+1:file_name.find('R')+5]
-#run_no    = int(run_no)
 run_no    = get_run_number(sipmIn)
 channs    = DB.DataSiPM(db_file, run_no).SensorID.values
 sens_type = SensorType.SIPM if 'sipm' in file_name else SensorType.PMT
